@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/chat_group_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="2dp"
+        android:topLeftRadius="0dp"
+        android:background="@drawable/receiver_messages_layout"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        tools:ignore="RtlCompat">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/receiver_messages_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/group_chat_name_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3dp"
+                android:enabled="false"
+                android:text="fdsgdfg"
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:textColor="@color/colorCurrentnameMessage"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/receiver_messages_layout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/group_chat_message_display"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:text="ازيك يا صاحبي "
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15sp"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/group_chat_time_display"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:text="02:45 am"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/tab_indicator_text"
+                        android:textSize="11dp"
+                        tools:ignore="RtlCompat" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/group_chat_date_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="1 jan 2019"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/tab_indicator_text"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+                    <ImageView
+                        android:id="@+id/chat_receiver_seen"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="2dp"
+                        android:visibility="gone"
+                        android:src="@drawable/un_seen" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sender_group_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/sender_messages_layout"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:topRightRadius="0dp"
+        tools:ignore="RtlCompat">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sender_messages_layout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/sender_chat_time_display"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="02:45 am"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/tab_indicator_text"
+                    android:textSize="11dp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/sender_chat_message_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:inputType="textMultiLine"
+                    android:text="ازيك يا صاحبي "
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="15sp"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/chat_sender_seen"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="2dp"
+                    android:src="@drawable/un_seen" />
+
+                <TextView
+                    android:id="@+id/sender_chat_date_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="1 jan 2019"
+
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/tab_indicator_text"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

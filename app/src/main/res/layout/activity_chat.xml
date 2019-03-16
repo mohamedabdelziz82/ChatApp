@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@drawable/wall"
+    tools:context="com.example.mohamedabdelazizhamad.whatsapp.Activities.ChatActivity">
+<include
+    layout="@layout/app_bar_layout"
+    android:id="@+id/chat_bar_layout">
+</include>
+    <ScrollView
+        android:id="@+id/myOneChatScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/chat_bar_layout">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="ltr"
+            android:id="@+id/chat_recyclerView"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:id="@+id/chat_card"
+            app:cardElevation="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/sender_messages_layout"
+            app:cardCornerRadius="25dp"
+            tools:ignore="RtlCompat">
+
+            <EditText
+                android:id="@+id/chat_inputSend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/chat_inputs"
+                android:hint="@string/Writemessage"
+                android:imeOptions="actionSend"
+                android:inputType="textCapSentences|textMultiLine"                android:textAlignment="textStart"
+                tools:ignore="RtlCompat" />
+        </android.support.v7.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/chat_Send_btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/send_btn"
+            android:src="@drawable/textsend" />
+    </LinearLayout>
+
+</RelativeLayout>

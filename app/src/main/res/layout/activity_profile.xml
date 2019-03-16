@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamedabdelazizhamad.whatsapp.Activities.ProfileActivity">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_photo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/profile_image"
+
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/profile_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_photo"
+                android:layout_marginTop="40dp"
+                android:gravity="center|center_vertical"
+                android:hint="@string/setusername"
+                android:padding="2dp"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/profile_user_Status"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/profile_user_name"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:hint="@string/heyiamavailablenow"
+                android:padding="2dp"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18dp"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/profile_send_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_user_Status"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button"
+                android:drawableEnd="@drawable/chat_message"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/sendChatRequest"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/profile_decline_send_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_send_message"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button"
+                android:drawableEnd="@drawable/cancel_chat"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/declineChatRequest"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:visibility="invisible"
+                tools:ignore="RtlCompat" />
+        </RelativeLayout>
+ </RelativeLayout>

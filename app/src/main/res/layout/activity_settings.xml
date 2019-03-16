@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SettingsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamedabdelazizhamad.whatsapp.Activities.SettingsActivity">
+
+    <include
+        android:id="@+id/setting_Toolbar"
+        layout="@layout/app_bar_layout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_Toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/profile_image"
+                app:cardElevation="20dp"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="1dp"
+
+                />
+
+            <EditText
+                android:id="@+id/set_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/inputs"
+                android:drawableStart="@drawable/edit_profile"
+                android:hint="@string/setusername"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:padding="2dp"
+                android:textAlignment="center"
+                tools:ignore="RtlCompat" />
+
+            <EditText
+                android:id="@+id/set_user_Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/set_user_name"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:autofillHints=""
+                android:background="@drawable/inputs"
+                android:drawableStart="@drawable/edit_status"
+                android:drawablePadding="10dp"
+                android:hint="@string/heyiamavailablenow"
+                android:inputType="textMultiLine"
+                android:padding="2dp"
+                android:textAlignment="gravity"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/btn_Update_Setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/set_user_Status"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/button"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

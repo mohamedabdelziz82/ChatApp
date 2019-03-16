@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">شات آب</string>
+    <string name="Chats">الدردشات</string>
+    <string name="Groups">المجموعات</string>
+    <string name="Contacts">جهات الاتصال</string>
+    <string name="email">البريد الإلكترونى</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forgetpassword">نسيت كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="neednewAccount">بحاجة الى حساب جديد ؟</string>
+    <string name="OrLoginUsingYour">أو تسجيل الدخول باستخدام</string>
+    <string name="Phone">الهاتف</string>
+    <string name="CreateAccount">إنشاء حساب</string>
+    <string name="AlreadyHaveAnAccount">هل لديك حساب ؟</string>
+    <string name="EmailisEmpty">البريد الإلكتروني فارغ</string>
+    <string name="passwordisEmpty">كلمة المرور فارغة</string>
+    <string name="CreatingNewAccount">يتم إنشاء حساب جديد</string>
+    <string name="AccountCreatedSuccessfully">تم إنشاء الحساب بنجاح...</string>
+    <string name="ThePasswordShouldBe">يجب أن تكون كلمة المرور من 6 أحرف على الأقل</string>
+    <string name="PleaseWaitCreatingNewAccount">يرجى الانتظار ، بينما نعمل على إنشاء حساب جديد لك ...</string>
+    <string name="TheEmailAddressIsAlreadyInUse">عنوان البريد الإلكتروني هو بالفعل قيد الاستخدام من قبل حساب آخر</string>
+    <string name="pleaseWait">ارجوك انتظر...</string>
+    <string name="loggedinSuccessful">تم تسجيل الدخول بنجاح ...</string>
+    <string name="find_friends">البحث عن أصدقاء</string>
+    <string name="setting">الإعدادات</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="EmailOrPasswordError">خطأ في البريد الإلكتروني أو كلمة المرور الرجاء التحقق من صحة البيانات</string>
+    <string name="setusername">اسم المستخدم</string>
+    <string name="heyiamavailablenow">مهلا , أنا متاح الآن ...</string>
+    <string name="update">تحديث</string>
+    <string name="usernameisEmpty">اسم المستخدم فارغ</string>
+    <string name="statusisEmpty">الحالة فارغة</string>
+    <string name="ProfileUpdatedSuccessfully">تم تحديث الملف الشخصي بنجاح...</string>
+    <string name="ProfileNotUpdate">لم يتم تحديث الملف </string>
+    <string name="Welcome">مرحبا</string>
+    <string name="Pleasesetupdateuserinfo">يرجى ضبط وتحديث معلومات المستخدم</string>
+    <string name="createGroup">انشاء مجموعة</string>
+    <string name="EnterGroupName">أدخل اسم المجموعة</string>
+    <string name="pleaseWritegroupname">يرجى كتابة اسم المجموعة</string>
+    <string name="groupiscreated">تم إنشاء المجموعة بنجاح</string>
+    <string name="Create">انشاء</string>
+    <string name="Cancel">الغاء</string>
+    <string name="Writemessage">  اكتب رسالة</string>
+    <string name="Enteryourmobilenumber">أدخل رقم هاتفك المحمول</string>
+    <string name="Continue">استمر</string>
+    <string name="MayIaskyourphone">هل لي أن أسأل رقم هاتفك ؟</string>
+    <string name="WaitforthecodeIsent">انتظر الرمز الذي أرسلته لك</string>
+     <string name="Enterverificationcode">أدخل رمز التحقق</string>
+    <string name="EnteravalidPhone">أدخل رقم هاتف صحيح</string>
+    <string name="Somethingiswrong">هناك خطأ ما ، سنقوم بإصلاحه قريبا ... </string>
+    <string name="Invalidcodeentered">تم إدخال رمز غير صالح ...</string>
+    <string name="codehasbeensent">تم إرسال رمز التحقق</string>
+    <string name="PhoneNumberVerification">التحقق من رقم الهاتف</string>
+    <string name="VerificationCode">رمز التحقق </string>
+    <string name="pleasewaitwewillverifying">يرجى الانتظار ، سنقوم بالتحقق من رمز التحقق</string>
+    <string name="ImageProfileUpdatedSuccessfully">تم تحديث صورة الملف الشخصي بنجاح</string>
+    <string name="ImageProfileNotUpdate">فشل فى تحديث صورة الملف الشخصي</string>
+    <string name="setProfileImage">تعيين صورة الملف الشخصي</string>
+    <string name="ResendCode">أعد إرسال الرمز</string>
+    <string name="ResendCodein">إعادة إرسال الرمز خلال 00:</string>
+    <string name="Iamhavingtrouble">أواجه مشكلة ما</string>
+    <string name="sendMessage">ارسل رسالة</string>
+    <string name="sendChatRequest">إرسال طلب الدردشة</string>
+    <string name="Me">أنا</string>
+    <string name="cancelChatRequest">إلغاء طلب الدردشة</string>
+    <string name="declineChatRequest">رفض طلب الدردشة</string>
+
+    <string name="AcceptChatRequest">قبول طلب الدردشة</string>
+    <string name="Deletethecontact">حذف جهة الاتصال</string>
+    <string name="ChatRequests">طلبات الدردشة</string>
+    <string name="Confirm">تأكيد</string>
+    <string name="LastSeen">آخر ظهور </string>
+    <string name="Youhavesentarequestto">لقد أرسلت طلباً إلى : </string>
+    <string name="cancelRequest">إلغاء الطلب</string>
+    <string name="Search">ابحث</string>
+    <string name="OnlineNow">متصل الآن</string>
+    <string name="ResetPassword">إعادة ضبط كلمة المرور</string>
+    <string name="BycheckingReset">عن طريق التحقق من إعادة تعيين كلمة المرور ،
+        ستتلقى رسالة بريد إلكتروني لإعادة تعيين كلمة المرور الخاصة بك
+</string>
+    <string name="pleaseCheckYourEmail">من فضلك تفقد بريدك الالكتروني</string>
+    <string name="offLine">غير متصل</string>
+    <string name="Editphonenumber">عدل رقم الهاتف</string>
+    <string name="ResendTo"> إعادة إرسال إلى </string>
+    <string name="Howdoyouwanttoreceive">كيف ترغب في تلقي الرمز ؟</string>
+    <string name="Thisemailiswrong">هذا البريد الإلكتروني خاطئ</string>
+
+
+</resources>

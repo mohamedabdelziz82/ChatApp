@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+       >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/request_profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profile_image"
+            app:cardElevation="16dp" />
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="RtlCompat">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_marginBottom="2dp"
+               android:orientation="horizontal">
+               <TextView
+                   android:id="@+id/request_user_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="25dp"
+                   android:textSize="18dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textDirection="ltr"
+                   />
+
+           </LinearLayout>
+            <TextView
+                android:id="@+id/request_user_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="15dp"
+                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/requestConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="@string/Confirm"
+                    android:layout_marginStart="5dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:drawableEnd="@drawable/accept"
+                    android:drawablePadding="5dp"
+                      />
+                <Button
+                    android:id="@+id/requestCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/Cancel"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:drawableEnd="@drawable/cancel"
+                    android:drawablePadding="5dp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
